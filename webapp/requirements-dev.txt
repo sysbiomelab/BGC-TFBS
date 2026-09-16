@@ -1,0 +1,7 @@
+# Development and test dependencies. Install on top of the runtime set:
+#     pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+pytest>=8.0             # the suite in tests/
+httpx>=0.28.1           # required by fastapi.testclient.TestClient

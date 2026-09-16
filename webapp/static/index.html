@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BGC-TFBS</title>
+<link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+<header>
+  <h1 onclick="go('')"><img src="/static/bgc-tfbs-logo.svg" alt="BGC-TFBS"
+       title="BGC-TFBS — right-click to save the logo"></h1>
+  <nav>
+    <span class="navlink" id="nav-home"      onclick="go('')">Home</span>
+    <span class="navlink" id="nav-families"  onclick="go('families')">Families</span>
+    <span class="navlink" id="nav-tf"        onclick="go('tf')">Regulators</span>
+    <span class="navlink" id="nav-downloads" onclick="go('downloads')">Downloads</span>
+  </nav>
+</header>
+<main id="main"></main>
+<footer id="foot"></footer>
+<aside id="panel"></aside>
+<div id="tooltip"></div>
+
+<!-- Classic scripts, never type="module": the inline onclick= handlers resolve
+     against the global scope. boot.js holds every load-time side effect and
+     must stay last. -->
+<script src="/static/js/core.js"></script>
+<script src="/static/js/router.js"></script>
+<script src="/static/js/logo.js"></script>
+<script src="/static/js/tracks.js"></script>
+<script src="/static/js/panel.js"></script>
+<script src="/static/js/pages/home.js"></script>
+<script src="/static/js/pages/families.js"></script>
+<script src="/static/js/pages/family.js"></script>
+<script src="/static/js/pages/tf.js"></script>
+<script src="/static/js/pages/ssn.js"></script>
+<script src="/static/js/pages/downloads.js"></script>
+<script src="/static/js/boot.js"></script>
+</body>
+</html>

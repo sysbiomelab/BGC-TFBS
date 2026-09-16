@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: >-
+  If you use BGC-TFBS, please cite the dataset record below and, once it is
+  out, the accompanying paper.
+type: software
+title: "BGC-TFBS: conserved regulatory motifs in biosynthetic gene clusters"
+abstract: >-
+  A web resource for exploring pathway-specific transcription factors and
+  upstream regulatory motifs across gene cluster families derived from the
+  BiG-FAM database, with sequence-similarity networks of 20 transcription
+  factor families and comparison of de-novo motifs against PRODORIC.
+authors:
+  - family-names: Matine
+    given-names: Idris
+    affiliation: >-
+      Qsys Lab, Centre for Host-Microbiome Interactions, King's College London
+license: MIT
+version: 1.0.0
+date-released: "2026-09-15"
+repository-code: "https://github.com/sysbiomelab/BGC-TFBS"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22766286
+    description: The full dataset (Zenodo record 22766286)
+keywords:
+  - biosynthetic gene clusters
+  - transcription factor binding sites
+  - regulatory motifs
+  - MEME
+  - PRODORIC
+  - BiG-FAM

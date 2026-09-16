@@ -1,0 +1,49 @@
+# --- Databases (the real one is ~8 GB; built on the HPC, never committed) ---
+*.db
+!webapp/tests/fixture.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+output/
+test.db
+# transfers, download staging and job logs
+*.gz
+downloads/
+logs/
+# the documented location for website.db (webapp/app/config.py resolves it there first)
+data/
+
+# --- MEME / pipeline outputs (live on the HPC) ---
+*.meme
+*.tsv.gz
+*.fasta
+*.fa
+*.gbk
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editors / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Test / coverage artefacts ---
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Local env ---
+.env
+.env.local

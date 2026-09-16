@@ -1,0 +1,19 @@
+# Runtime dependencies of the web application.
+#
+# Derived from the third-party imports in app/ -- an AST scan finds exactly one,
+# fastapi -- plus the ASGI server used to run it. Everything else imported there
+# (os, re, json, sqlite3, functools, threading, contextlib) is standard library,
+# SQLite included: there is no ORM and no database driver to install.
+#
+# Lower bounds only. These are the versions developed against; nothing here is
+# known to break on a newer release.
+#
+# fastapi: app object, routers, Query validation, StaticFiles, FileResponse.
+#          Pulls in starlette and pydantic transitively.
+# uvicorn: the server -- python -m uvicorn --app-dir webapp app.main:app
+#
+# Requires Python >= 3.10: both packages do, and app/routers uses `str | None`
+# annotations that FastAPI evaluates at import time.
+
+fastapi>=0.141.1
+uvicorn>=0.52.4
