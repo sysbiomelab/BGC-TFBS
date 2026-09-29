@@ -2,15 +2,22 @@
 
 Code for the BGC-TFBS website.
 
-**Run:** `pip install -r webapp/requirements.txt && uvicorn --app-dir webapp app.main:app`
-with `WEBSITE_DB` pointing at the database.
+**Website:** https://bgc-tfbs.sites.er.kcl.ac.uk/
 
-**Data:** the database and all underlying files are on Zenodo,
-[10.5281/zenodo.22766286](https://doi.org/10.5281/zenodo.22766286).
+**Run:**
 
-**Author:** Idris Matine, Qsys Lab, Centre for Host-Microbiome Interactions,
-King's College London.
+```bash
+pip install -r webapp/requirements.txt
+uvicorn --app-dir webapp app.main:app
+```
 
-**Cite:** paper to be added.
+Set `WEBSITE_DB` to point to the database.
 
-**Licence:** code MIT (see [LICENSE](LICENSE)); data CC BY 4.0.
+**Data:** The database and underlying files are available on Zenodo:
+[10.5281/zenodo.22766286](https://doi.org/10.5281/zenodo.22766286)
+
+**Author:** Idris Matine, QSys Lab, Centre for Host-Microbiome Interactions, King's College London.
+
+**Cite:** Paper to be added.
+
+**Licence:** Code MIT (see [LICENSE](LICENSE)); data CC BY 4.0.
