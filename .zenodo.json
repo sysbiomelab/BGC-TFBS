@@ -1,0 +1,19 @@
+{
+  "title": "BGC-TFBS: web resource for predicted transcription factor binding sites in biosynthetic gene cluster families (source code)",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "access_right": "open",
+  "description": "Source code of the BGC-TFBS web resource (https://bgc-tfbs.kcl.ac.uk), which provides predicted transcription factor binding motifs, cluster-encoded regulator annotations and sequence similarity networks for biosynthetic gene cluster families. Predictions were generated with the Motif-Miner pipeline (https://github.com/sysbiomelab/Motif-Miner). The underlying data are archived separately under CC BY 4.0 (https://doi.org/10.5281/zenodo.22766286). Version used in Matine et al., submitted to Nucleic Acids Research, 2026.",
+  "creators": [
+    {"name": "Matine, Idris", "affiliation": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King's College London, London, United Kingdom", "orcid": "0009-0006-0020-6991"},
+    {"name": "Garcia Guevara, Fernando", "affiliation": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King's College London, London, United Kingdom", "orcid": "0000-0002-5621-6156"},
+    {"name": "Clasen, Frederick", "affiliation": "Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King's College London, London, United Kingdom", "orcid": "0009-0001-6197-4584"},
+    {"name": "Guo, Miao", "affiliation": "Department of Engineering, Faculty of Natural, Mathematical & Engineering Sciences, King's College London, London, United Kingdom", "orcid": "0000-0001-7733-5077"},
+    {"name": "Shoaie, Saeed", "affiliation": "Centre for Host-Microbiome Interactions, King's College London, London, United Kingdom; Quantitative Systems Biology, Faculty of Medicine, Biruni University, Istanbul, Turkey", "orcid": "0000-0001-5834-4533"}
+  ],
+  "keywords": ["biosynthetic gene clusters", "transcription factor binding sites", "gene regulation", "natural products", "web resource", "database"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.22766286", "relation": "requires", "resource_type": "dataset"}
+  ]
+}
